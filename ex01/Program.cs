@@ -1,13 +1,24 @@
-﻿//Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+﻿//Напишите программу, которая принимает на вход пятизначное число и проверяет, 
+//является ли оно палиндромом.
 
-int number = 15978;
+Console.Write("введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
 int N = 0;
+int temp = number;
 
 while(number > 0) 
 {
 
 N = N * 10 + number % 10;
 number = number / 10;
-
 }
- Console.WriteLine(N);
+if(temp==N) 
+{
+Console.WriteLine("число является палиндром");
+}
+else 
+{
+  Console.WriteLine("Число не является палиндромом");
+}
+ 
+
