@@ -29,7 +29,7 @@ void GetCub(int[] colNum)
   int count = colNum.Length;
   for (int i = 1; i < count; i++)
   {
-    colNum[i] = i * i * i;
+    colNum[i] =Convert.ToInt32(Math.Pow(i,3));
   }
 }
 
