@@ -1,8 +1,13 @@
 ﻿//Напишите программу, которая принимает на вход пятизначное число и проверяет, 
 //является ли оно палиндромом.
+//
+int GetNumberBuUser(string text)
+{
+  Console.Write("введите число: ");
+  return Convert.ToInt32(Console.ReadLine());
+}
+int number = GetNumberBuUser("Введите число: ");
 
-Console.Write("введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
 int N = 0;
 int temp = number;
 
